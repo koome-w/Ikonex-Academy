@@ -12,10 +12,16 @@ A web-based Student Management System built with PHP, MySQL, HTML, CSS, and Java
 
 ## Setup
 
-1. Place the project directory in your XAMPP `htdocs` folder.
-2. Start Apache and MySQL in XAMPP.
-3. Import `ikonex_academy.sql` into MySQL using phpMyAdmin or the MySQL command line.
-4. Open `http://localhost/Ikonex Academy/index.php` in your browser.
+1. Install the project locally or deploy it to Vercel.
+2. Create a MySQL database and import `ikonex_academy.sql`.
+3. Configure database environment variables for local or Vercel deployment.
+4. Open `/index.php` in your browser, or visit the Vercel deployment URL.
+
+## Vercel deployment
+
+- Add these environment variables in Vercel: `DB_HOST`, `DB_NAME`, `DB_USER`, `DB_PASS`.
+- Make sure the database is accessible from Vercel (external MySQL host or database service).
+- Deploy the repository directly to Vercel and it will use the PHP runtime.
 
 ## Default login
 

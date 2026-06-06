@@ -2,10 +2,10 @@
 
 session_start();
 
-define('DB_HOST', '127.0.0.1');
-define('DB_NAME', 'ikonex_academy');
-define('DB_USER', 'root');
-define('DB_PASS', '');
+define('DB_HOST', getenv('DB_HOST') ?: '127.0.0.1');
+define('DB_NAME', getenv('DB_NAME') ?: 'ikonex_academy');
+define('DB_USER', getenv('DB_USER') ?: 'root');
+define('DB_PASS', getenv('DB_PASS') ?: '');
 
 define('GRADE_SCALE', serialize([
     ['grade' => 'A', 'min' => 70, 'max' => 100, 'remark' => 'Excellent'],
@@ -35,7 +35,7 @@ function db() {
 
 function requireLogin() {
     if (empty($_SESSION['user_id'])) {
-        header('Location: login.php');
+        header('Location: index.php');
         exit;
     }
 }
