@@ -24,7 +24,7 @@ A web-based Student Management System built with PHP, MySQL, HTML, CSS, and Java
 
 ## Files added
 
-- `index.php` — main application entry with session protection
+- `dashboard.php` - main application entry with session protection
 - `index.php` / `logout.php` - authentication pages
 - `config.php` - shared database and helper functions
 - `api/streams.php`, `api/students.php`, `api/subjects.php`, `api/scores.php`, `api/reports.php`
