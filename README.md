@@ -21,7 +21,7 @@ A web-based Student Management System built with PHP, MySQL, HTML, CSS, and Java
 
 - Add these environment variables in Vercel: `DB_HOST`, `DB_NAME`, `DB_USER`, `DB_PASS`.
 - Make sure the database is accessible from Vercel (external MySQL host or database service).
-- Deploy the repository directly to Vercel and it will use the PHP runtime.
+- The project uses the `vercel-php` builder in `vercel.json` for PHP support.
 
 ## Default login
 
